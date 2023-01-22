@@ -1,0 +1,32 @@
+body
+{
+    background-color:  #242e48; 
+    color: whitesmoke; 
+    font-family: Optima;
+}
+
+h2{
+    color:   #b5b2ed
+    ;
+
+}
+
+.navbar {
+    min-height:20px !important;
+ }
+
+
+a:link {
+    color:   #80d1b4  ;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color:   #80d1b4   ;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color:   #80d1b4   ;
+    background-color: transparent;
+}
