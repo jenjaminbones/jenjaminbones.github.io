@@ -1,0 +1,1 @@
+transpose is basis dependent, but dagger isnt
