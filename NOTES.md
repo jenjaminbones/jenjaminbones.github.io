@@ -6,3 +6,4 @@ add something about coding experience
 - chocolate bar problem
 
 add titles to webpages
+check readability on phone
