@@ -25,7 +25,7 @@
     <div class="wide_content">
         <h1>Research </h1>
 
-        <p> All my papers can be found <a href="https://scholar.google.com/citations?user=-vXlmzIAAAAJ&hl=en&oi=sra">here</a>, and my thesis is <a href="thesis.pdf">here</a>.</p> <br>
+        <p> All my papers can be found <a href="https://scholar.google.com/citations?user=-vXlmzIAAAAJ&hl=en&oi=sra">here</a>, and my thesis is <a href="docs/thesis.pdf">here</a>.</p> <br>
 
         <p>I am currently interested in:</p>
         <ul class="list-left">
@@ -40,13 +40,13 @@
         <br><hr color="LightGray">
         <h2>The Hadamard Gate in Quantum Computation</h2>
         <p> I undertook this project with my two PhD supervisors, Paul Skrzypczyk and Noah Linden, and our paper was recently published in Quantum.</p>
-        <p><a href="https://quantum-journal.org/papers/q-2024-09-11-1470/pdf/">Paper</a> &emsp;
-        <a href="hadamard_slides.pdf">Slides</a> &emsp;
-        <a href="https://www.youtube.com/watch?v=gIj-9g7grjQ">Talk</a> 
+        <p><a href="https://quantum-journal.org/papers/q-2024-09-11-1470/pdf/">Paper: The Hadamard gate cannot be replaced by a resource state in universal quantum computation, Quantum, 2024.</a> &emsp;
+        <a href="docs/hadamard_slides.pdf">Slides</a> &emsp;
+        <a href="docs/https://www.youtube.com/watch?v=gIj-9g7grjQ">Talk</a> 
         </p> 
         <div class="container">
             <div class="image">
-                <img src="fig_for_quantum-1.png" width="90%">
+                <img src="figs/fig_for_quantum-1.png" width="90%">
               </div>
             <div class="text" font-size="14px">
                 <h4>Abstract</h4>
@@ -58,7 +58,8 @@
         <p>
         This work relates to the question: how many copies of a multipartite quantum state are needed to determine if the state is product across some bipartition? This work was in collaboration with Ashley Montanaro, and our paper is essentially a long mathematical proof. A preprint is available, and the manuscript is currently under review at journals. 
     </p>
-    <p><a href="https://arxiv.org/pdf/2406.16827">Paper</a>
+    <p><a href="https://arxiv.org/pdf/2406.16827">Paper: Testing multipartite productness is easier than testing bipartite productness, arXiv, 2024.</a>
+        
 
         <div class="container">
            
@@ -68,7 +69,7 @@
                 We show that \(\Omega(n / \log n) \) copies are required (for fixed \(\epsilon \leq \frac{1}{2}\)), complementing a previous result that \(O(n / \epsilon^2)\) copies are sufficient. Our proof technique proceeds by considering uniformly random ensembles over such states, and showing that the trace distance between these ensembles becomes arbitrarily small for sufficiently large \(n\) unless the number of copies is at least \(\Omega (n / \log n)\). We discuss implications for testing graph states and computing the generalised geometric measure of entanglement.
             </div>
             <div class="image">
-                <img src="gme.pdf" width="90%">
+                <img src="figs/gme.pdf" width="90%">
               </div>
           </div>
     
@@ -80,11 +81,11 @@
     <p>I also interned with Entropica Labs (a Singapore based quantum computing startup) in 2019, working on optimisation techniques for the quantum approximate optimisation algorithm.</p>
 
     <p>Prior to this, I worked in the Computer Science department at the University of Sheffield, looking at optimisation techniques in quantum simulation (Trotter-Suzuki formulas).</p>
-        <p><a href="https://arxiv.org/pdf/2411.13742">Paper</a></p>
 
+        <p><a href="https://arxiv.org/pdf/2411.13742">Paper: Benchmarking a wide range of optimisers for solving the Fermi-Hubbard model using the variational quantum eigensolver, arXiv, 2024.</a></p>
         <div class="container">
             <div class="image">
-                <img src="final_errors_boxplot_no_scatter_outliers.pdf" width="90%">
+                <img src="figs/final_errors_boxplot_no_scatter_outliers.pdf" width="90%">
               </div>
             <div class="text" font-size="14px">
                 <h4>Abstract</h4>
@@ -94,16 +95,96 @@
            
           </div>
 
+          <p><a href="https://arxiv.org/pdf/1904.01336">Paper: Optimising Trotter-Suzuki Decompositions for
+            Quantum Simulation Using Evolutionary Strategies, GECCO, 2019.</a></p>
+          <div class="container">
+              
+              <div class="text" font-size="14px">
+                  <h4>Abstract</h4>
+                  One of the most promising applications of near-term quantum computing is the simulation of
+                  quantum systems, a classically intractable task. Quantum simulation requires computationally ex-
+                  pensive matrix exponentiation; Trotter-Suzuki decomposition of this exponentiation enables eﬃcient
+                  simulation to a desired accuracy on a quantum computer. We apply the Covariance Matrix Adap-
+                  tation Evolutionary Strategy (CMA-ES) algorithm to optimise the Trotter-Suzuki decompositions
+                  of a canonical quantum system, the Heisenberg Chain; we reduce simulation error by around 60%.
+                  We introduce this problem to the computational search community, show that an evolutionary op-
+                  timisation approach is robust across runs and problem instances, and find that optimisation results
+                  generalise to the simulation of larger systems.</div>
+                          <div class="image">
+                            <img src="figs/suzuki.png" width="90%">
+                          </div>
+            </div>
+
           <br><hr color="LightGray">
        <h2>High-dimensional Measurement Incompatibility</h2>
-       <br><hr color="LightGray"> 
+
+       <p><a href="https://arxiv.org/abs/2202.12980">Paper: Simulability of high-dimensional quantum measurements, PRL, 2022.</a></p>
+       <div class="container">
+
+        <div class="text" font-size="14px">
+            <h4>Abstract</h4>
+            We investigate the compression of quantum information with respect to a given set $\mathcal{M}$ of high-dimensional measurements. This leads to a notion of simulability, where we demand that the statistics obtained from $\mathcal{M}$ and an arbitrary quantum state $\rho$ are recovered exactly by first compressing $\rho$ into a lower dimensional space, followed by some quantum measurements. A full quantum compression is possible, i.e., leaving only classical information, if and only if the set $\mathcal{M}$ is jointly measurable. Our notion of simulability can thus be seen as a quantification of measurement incompatibility in terms of dimension. After defining these concepts, we provide an illustrative examples involving mutually unbiased basis, and develop a method based on semi-definite programming for constructing simulation models. In turn we analytically construct optimal simulation models for all projective measurements subjected to white noise or losses. Finally, we discuss how our approach connects with other concepts introduced in the context of quantum channels and quantum correlations.
+</div>
+<div class="image">
+    <img src="figs/hd sim.png" width="90%">
+  </div>
+       </div>
+       <p><a href="https://arxiv.org/abs/2207.04080">Paper: Equivalence between simulability of high-dimensional measurements and high-dimensional steering, PRA, 2023.</a></p>
+       <div class="container">
+        <div class="image">
+            <img src="figs/hdmi.png" width="90%">
+          </div>
+        <div class="text" font-size="14px">
+            <h4>Abstract</h4>
+           
+            The eﬀect of quantum steering arises from the judicious combination of an entangled state with
+            a set of incompatible measurements. Recently, it was shown that this form of quantum correlations
+            can be quantified in terms of a dimension, leading to the notion of genuine high-dimensional steering.
+            While this naturally connects to the dimensionality of entanglement (Schmidt number), we show
+            that this eﬀect also directly connects to a notion of dimension for measurement incompatibility.
+            More generally, we present a general connection between the concepts of steering and measurement
+            incompatibility, when quantified in terms of dimension. From this connection, we propose a novel
+            twist on the problem of simulating quantum correlations. Specifically, we show how the correlations
+            of certain high-dimensional entangled states can be exactly recovered using only shared random-
+            ness and lower-dimensional entanglement. Finally, we derive criteria for testing the dimension of
+            measurement incompatibility, and discuss the extension of these ideas to quantum channels.
+</div>
+       </div>
+
+       <p><a href="https://arxiv.org/abs/2408.15880">Paper: Certifying high-dimensional quantum channels, arXiv, 2024.</a></p>
+<div class="container">
+    
+    <div class="text" font-size="14px">
+        <h4>Abstract</h4>
+       
+        The use of high-dimensional systems for quantum communication opens interesting perspectives,
+        such as increased information capacity and noise resilience. In this context, it is crucial to certify
+        thatagivenquantumchannelcanreliablytransmithigh-dimensionalquantuminformation. Herewe
+        develop efficient methods for the characterization of high-dimensional quantum channels. We first
+        present a notion of dimensionality of quantum channels, and develop efficient certification methods
+        for this quantity. We consider a simple prepare-and-measure setup, and provide witnesses for both a
+        fully and a partially trusted scenario. In turn we apply these methods to a photonic experiment and
+        certify dimensionalities up to 59 for a commercial graded-index multi-mode optical fiber. Moreover,
+        we present extensive numerical simulations of the experiment, providing an accurate noise model for
+        the fiber and exploring the potential of more sophisticated witnesses. Our work demonstrates the
+        efficient characterization of high-dimensional quantum channels, a key ingredient for future quantum
+        communication technologies.
+</div>
+    <div class="image">
+        <img src="figs/hd channel.png" width="90%">
+      </div>
+   
+       
+      </div>
+
+      <br><hr color="LightGray"> 
        <h2>Quantum Steering in Networks</h2>
 
-        <p><a href="https://arxiv.org/pdf/2106.04482">Paper</a></p>
+        <p><a href="https://arxiv.org/pdf/2106.04482">Paper: Network Quantum Steering, PRL, 2021.</a></p>
 
         <div class="container">
             <div class="image">
-                <img src="network_steering.png" width="90%">
+                <img src="figs/network_steering.png" width="90%">
               </div>
             <div class="text" font-size="14px">
                 <h4>Abstract</h4>
