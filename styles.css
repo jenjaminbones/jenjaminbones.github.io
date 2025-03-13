@@ -100,3 +100,21 @@ img {
    }
 
 
+   @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .menu li {
+        margin: 5px 0;
+    }
+    .content {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .navbar h1 {
+        font-size: 20px;
+    }
+}
