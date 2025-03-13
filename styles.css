@@ -1,32 +1,101 @@
-body
-{
-    background-color:  #1f2a44; 
-    color: whitesmoke; 
-    font-family: Optima;
+body {
+    font-family: "Georgia", serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-
-h2{
-    color:   #c8c5f3
-    ;
-
-}
-
 .navbar {
-    min-height:20px !important;
- }
+    width: 100%;
+    background-color: #11162b;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-a:link {
-    color:   #80d1b4  ;
-    background-color: transparent;
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar h1 {
+    font-size: 24px;
+    margin: 0 20px 0 0;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.menu li {
+    margin: 0 30px;
+}
+.menu a {
     text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
-a:visited {
-    color:   #80d1b4   ;
-    background-color: transparent;
-    text-decoration: none;
+.menu a:hover {
+    text-decoration: underline;
 }
-a:active {
-    color:   #80d1b4   ;
-    background-color: transparent;
+.content {
+    flex-grow: 1;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
+
+.list-left {
+    text-align: left;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.wide_content {
+    flex-grow: 1;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.wide_content_left {
+    flex-grow: 1;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+        display: inline-block;
+        vertical-align: top;
+}
+img {
+    height: auto;
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: px;
+   }
+
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+
+  <h1>Benjamin D.M. Jones</h1>
+
+  <div class="navbar">
+        
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="consulting.html">Teaching+Consulting</a></li>
+        <li><a href="misc.html">Misc</a></li>
+    </ul>
+</div>
+
+    <div class="wide_content">
+        <h1>Research </h1>
+
+        <p> All my papers can be found <a href="https://scholar.google.com/citations?user=-vXlmzIAAAAJ&hl=en&oi=sra">here</a>, and my thesis is <a href="thesis.pdf">here</a>.</p> <br>
+
+        <p>I am currently interested in:</p>
+        <ul class="list-left">
+            <li>Quantum Error Correction</li>
+            <li>Quantum Algorithms</li>
+            <li>Artificial Intelligence: both the underlying research behind current models, as well as how to work with AI to research and code more effectively.</li>
+            <li>Software development: writing efficient, clean, collaborative code.</li>
+        </ul>
+        
+        <p>Below are some topics and projects that I have worked on.</p>
+
+        <br><hr color="LightGray">
+        <h2>The Hadamard Gate in Quantum Computation</h2>
+        <p> I undertook this project with my two PhD supervisors, Paul Skrzypczyk and Noah Linden, and our paper was recently published in Quantum.</p>
+        <p><a href="https://quantum-journal.org/papers/q-2024-09-11-1470/pdf/">Paper</a> &emsp;
+        <a href="hadamard_slides.pdf">Slides</a> &emsp;
+        <a href="https://www.youtube.com/watch?v=gIj-9g7grjQ">Talk</a> 
+        </p> 
+        <div class="container">
+            <div class="image">
+                <img src="fig_for_quantum-1.png" width="90%">
+              </div>
+            <div class="text" font-size="14px">
+                <h4>Abstract</h4>
+                We consider models of quantum computation that involve operations performed on some fixed resourceful quantum state. Examples that fit this paradigm include magic state injection and measurement-based approaches. We introduce a framework that incorporates both of these cases and focus on the role of coherence (or superposition) in this context, as exemplified through the Hadamard gate. We prove that given access to incoherent unitaries (those that are unable to generate superposition from computational basis states, e.g. CNOT, diagonal gates), classical control, computational basis measurements, and any resourceful ancillary state (of arbitrary dimension), it is not possible to implement any coherent unitary (e.g. Hadamard) exactly with non-zero probability. We also consider the approximate case by providing lower bounds for the induced trace distance between the above operations and $n$ Hadamard gates. To demonstrate the stability of this result, this is then extended to a similar no-go result for the case of using $k$ Hadamard gates to exactly implement $n>k$ Hadamard gates. </div>
+           
+          </div>
+          <br><hr color="LightGray">
+        <h2>Property Testing of Entanglement</h2>
+        <p>
+        This work relates to the question: how many copies of a multipartite quantum state are needed to determine if the state is product across some bipartition? This work was in collaboration with Ashley Montanaro, and our paper is essentially a long mathematical proof. A preprint is available, and the manuscript is currently under review at journals. 
+    </p>
+    <p><a href="https://arxiv.org/pdf/2406.16827">Paper</a>
+
+        <div class="container">
+           
+            <div class="text" font-size="14px">
+                <h4>Abstract</h4>
+             We prove a lower bound on the number of copies needed to test the property of a multipartite quantum state being product across some bipartition (i.e. not genuinely multipartite entangled), given the promise that the input state either has this property or is \(\epsilon\)-far in trace distance from any state with this property. 
+                We show that \(\Omega(n / \log n) \) copies are required (for fixed \(\epsilon \leq \frac{1}{2}\)), complementing a previous result that \(O(n / \epsilon^2)\) copies are sufficient. Our proof technique proceeds by considering uniformly random ensembles over such states, and showing that the trace distance between these ensembles becomes arbitrarily small for sufficiently large \(n\) unless the number of copies is at least \(\Omega (n / \log n)\). We discuss implications for testing graph states and computing the generalised geometric measure of entanglement.
+            </div>
+            <div class="image">
+                <img src="gme.pdf" width="90%">
+              </div>
+          </div>
+    
+          <br><hr color="LightGray">
+        <h2>Numerically Benchmarking Optimisers for Quantum Algorithms</h2>
+        <p>I have worked on several projects connected to this topic over the years. Most recently, I interned at <a href="https://www.phasecraft.io">Phasecraft</a> (a quantum computing startup, focused on near-term applications and software) in the summer of 2022, and remained as a consultant with the company until December 2024. I essentially worked on the question: which are the best optimisers to use in variational quantum algorithms?
+        This work involved a great deal of coding in Python, and running large scale numerical experiments on high-performance clusters.</p>
+
+    <p>I also interned with Entropica Labs (a Singapore based quantum computing startup) in 2019, working on optimisation techniques for the quantum approximate optimisation algorithm.</p>
+
+    <p>Prior to this, I worked in the Computer Science department at the University of Sheffield, looking at optimisation techniques in quantum simulation (Trotter-Suzuki formulas).</p>
+        <p><a href="https://arxiv.org/pdf/2411.13742">Paper</a></p>
+
+        <div class="container">
+            <div class="image">
+                <img src="final_errors_boxplot_no_scatter_outliers.pdf" width="90%">
+              </div>
+            <div class="text" font-size="14px">
+                <h4>Abstract</h4>
+                We numerically benchmark 30 optimisers on 372 instances of the variational quantum eigensolver for solving the Fermi-Hubbard system with the Hamiltonian variational ansatz. We rank the optimisers with respect to metrics such as final energy achieved and function calls needed to get within a certain tolerance level, and find that the best-performing optimisers are variants of gradient descent such as Momentum and ADAM (using finite difference), SPSA, CMAES, and BayesMGD. We perform gradient analysis, and observe that the step size for finite difference has a very significant impact. We also consider using simultaneous perturbation (inspired by SPSA) as a gradient subroutine: here finite difference can lead to a more precise estimate of the ground state but uses more calls, whereas simultaneous perturbation can converge quicker but may be less precise in the later stages. Finally, we study the quantum natural gradient algorithm: we implement this method for 1-dimensional Fermi-Hubbard systems, and find that whilst it can reach a lower energy with fewer iterations, this improvement is typically lost when taking total function calls into account.
+                Our method involves performing careful hyperparameter sweeping on 4 instances. We present a variety of analysis and figures, detailed optimiser notes, and discuss future directions. 
+                        </div>
+           
+          </div>
+
+          <br><hr color="LightGray">
+       <h2>High-dimensional Measurement Incompatibility</h2>
+       <br><hr color="LightGray"> 
+       <h2>Quantum Steering in Networks</h2>
+
+        <p><a href="https://arxiv.org/pdf/2106.04482">Paper</a></p>
+
+        <div class="container">
+            <div class="image">
+                <img src="network_steering.png" width="90%">
+              </div>
+            <div class="text" font-size="14px">
+                <h4>Abstract</h4>
+               
+The development of large-scale quantum networks promises to bring a multitude of technological applications as well as shed light on foundational topics, such as quantum nonlocality. It is particularly interesting to consider scenarios where sources within the network are statistically independent, which leads to so-called network nonlocality, even when parties perform fixed measurements. Here we promote certain parties to be trusted and introduce the notion of \textit{network steering} and \textit{network local hidden state (NLHS) models} within this paradigm of independent sources. In one direction, we show how results from Bell nonlocality and quantum steering can be used to demonstrate network steering. We further show that it is a genuinely novel effect, by exhibiting unsteerable states that nevertheless demonstrate network steering, based upon entanglement swapping, yielding a form of activation. On the other hand, we provide no-go results for network steering in a large class of scenarios, by explicitly constructing NLHS models. 
+</div>
+           
+          </div>
+
+    </div>
+
+</body>
+<div class="navbar">
+        
+    <ul class="menu">
+        <li><a href="Benjamin Jones CV.pdf">CV</a></li>
+        <li><a href="https://scholar.google.com/citations?user=-vXlmzIAAAAJ&hl=en&oi=sra">Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/in/jenjaminbones/">LinkedIn</a></li>
+          <li><a href="https://github.com/jenjaminbones">GitHub</a></li>
+    </ul>
+</div>
+</html>
