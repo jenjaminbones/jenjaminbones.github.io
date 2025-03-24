@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Benjamin DM Jones Webpage</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </script>
 </head>
 <body>
@@ -43,7 +45,7 @@
               </div>
             <div class="text" font-size="14px">
                 <h4>Abstract</h4>
-                We consider models of quantum computation that involve operations performed on some fixed resourceful quantum state. Examples that fit this paradigm include magic state injection and measurement-based approaches. We introduce a framework that incorporates both of these cases and focus on the role of coherence (or superposition) in this context, as exemplified through the Hadamard gate. We prove that given access to incoherent unitaries (those that are unable to generate superposition from computational basis states, e.g. CNOT, diagonal gates), classical control, computational basis measurements, and any resourceful ancillary state (of arbitrary dimension), it is not possible to implement any coherent unitary (e.g. Hadamard) exactly with non-zero probability. We also consider the approximate case by providing lower bounds for the induced trace distance between the above operations and $n$ Hadamard gates. To demonstrate the stability of this result, this is then extended to a similar no-go result for the case of using $k$ Hadamard gates to exactly implement $n>k$ Hadamard gates. </div>
+                We consider models of quantum computation that involve operations performed on some fixed resourceful quantum state. Examples that fit this paradigm include magic state injection and measurement-based approaches. We introduce a framework that incorporates both of these cases and focus on the role of coherence (or superposition) in this context, as exemplified through the Hadamard gate. We prove that given access to incoherent unitaries (those that are unable to generate superposition from computational basis states, e.g. CNOT, diagonal gates), classical control, computational basis measurements, and any resourceful ancillary state (of arbitrary dimension), it is not possible to implement any coherent unitary (e.g. Hadamard) exactly with non-zero probability. We also consider the approximate case by providing lower bounds for the induced trace distance between the above operations and \(n\) Hadamard gates. To demonstrate the stability of this result, this is then extended to a similar no-go result for the case of using \(k\) Hadamard gates to exactly implement \(n>k \) Hadamard gates. </div>
            
           </div>
           <br><hr color="LightGray">
@@ -116,7 +118,7 @@
 
         <div class="text" font-size="14px">
             <h4>Abstract</h4>
-            We investigate the compression of quantum information with respect to a given set $\mathcal{M}$ of high-dimensional measurements. This leads to a notion of simulability, where we demand that the statistics obtained from $\mathcal{M}$ and an arbitrary quantum state $\rho$ are recovered exactly by first compressing $\rho$ into a lower dimensional space, followed by some quantum measurements. A full quantum compression is possible, i.e., leaving only classical information, if and only if the set $\mathcal{M}$ is jointly measurable. Our notion of simulability can thus be seen as a quantification of measurement incompatibility in terms of dimension. After defining these concepts, we provide an illustrative examples involving mutually unbiased basis, and develop a method based on semi-definite programming for constructing simulation models. In turn we analytically construct optimal simulation models for all projective measurements subjected to white noise or losses. Finally, we discuss how our approach connects with other concepts introduced in the context of quantum channels and quantum correlations.
+            We investigate the compression of quantum information with respect to a given set \(\mathcal{M}\) of high-dimensional measurements. This leads to a notion of simulability, where we demand that the statistics obtained from \(\mathcal{M}\) and an arbitrary quantum state \(\rho\) are recovered exactly by first compressing \(\rho \) into a lower dimensional space, followed by some quantum measurements. A full quantum compression is possible, i.e., leaving only classical information, if and only if the set \(\mathcal{M} \) is jointly measurable. Our notion of simulability can thus be seen as a quantification of measurement incompatibility in terms of dimension. After defining these concepts, we provide an illustrative examples involving mutually unbiased basis, and develop a method based on semi-definite programming for constructing simulation models. In turn we analytically construct optimal simulation models for all projective measurements subjected to white noise or losses. Finally, we discuss how our approach connects with other concepts introduced in the context of quantum channels and quantum correlations.
 </div>
 <div class="image">
     <img src="figs/hd sim.png" width="90%">
@@ -152,7 +154,7 @@
        
         The use of high-dimensional systems for quantum communication opens interesting perspectives,
         such as increased information capacity and noise resilience. In this context, it is crucial to certify
-        thatagivenquantumchannelcanreliablytransmithigh-dimensionalquantuminformation. Herewe
+        that a given quantum channel can reliably transmit high-dimensional quantum information. Here we
         develop efficient methods for the characterization of high-dimensional quantum channels. We first
         present a notion of dimensionality of quantum channels, and develop efficient certification methods
         for this quantity. We consider a simple prepare-and-measure setup, and provide witnesses for both a
@@ -182,7 +184,7 @@
             <div class="text" font-size="14px">
                 <h4>Abstract</h4>
                
-The development of large-scale quantum networks promises to bring a multitude of technological applications as well as shed light on foundational topics, such as quantum nonlocality. It is particularly interesting to consider scenarios where sources within the network are statistically independent, which leads to so-called network nonlocality, even when parties perform fixed measurements. Here we promote certain parties to be trusted and introduce the notion of \textit{network steering} and \textit{network local hidden state (NLHS) models} within this paradigm of independent sources. In one direction, we show how results from Bell nonlocality and quantum steering can be used to demonstrate network steering. We further show that it is a genuinely novel effect, by exhibiting unsteerable states that nevertheless demonstrate network steering, based upon entanglement swapping, yielding a form of activation. On the other hand, we provide no-go results for network steering in a large class of scenarios, by explicitly constructing NLHS models. 
+The development of large-scale quantum networks promises to bring a multitude of technological applications as well as shed light on foundational topics, such as quantum nonlocality. It is particularly interesting to consider scenarios where sources within the network are statistically independent, which leads to so-called network nonlocality, even when parties perform fixed measurements. Here we promote certain parties to be trusted and introduce the notion of <i>network steering</i> and <i>network local hidden state (NLHS) models</i> within this paradigm of independent sources. In one direction, we show how results from Bell nonlocality and quantum steering can be used to demonstrate network steering. We further show that it is a genuinely novel effect, by exhibiting unsteerable states that nevertheless demonstrate network steering, based upon entanglement swapping, yielding a form of activation. On the other hand, we provide no-go results for network steering in a large class of scenarios, by explicitly constructing NLHS models. 
 </div>
            
           </div>
